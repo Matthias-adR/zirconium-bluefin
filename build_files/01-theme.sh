@@ -79,6 +79,7 @@ add_wants_niri udiskie.service
 add_wants_niri xwayland-satellite.service
 cat /usr/lib/systemd/user/niri.service
 
+systemctl disable gdm
 systemctl enable greetd
 systemctl enable firewalld
 
