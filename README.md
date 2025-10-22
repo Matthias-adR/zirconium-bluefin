@@ -1,6 +1,8 @@
 # Zirconium
 ***Do you like how I dance? I've got Zirconium pants!***
 
+### This is a fork of Zirconium, which aims to be based off `bluefin-nvidia` instead. This is not ready for production use, please use Zirconium linked below.
+
 ## What is Zirconium?
 Zirconium is an opinionated fedora-bootc image that makes use of Niri and Noctalia to create a usable out of the box TWM experience.
 
@@ -9,14 +11,14 @@ Zirconium is built primarily for container-focused development and day-to-day us
 ## How do I use this?
 Currently, the best way to install Zirconium is to rebase from an existing Fedora Atomic install. We recommend [Bluefin](https://projectbluefin.io/), but it doesn't really matter.
 
-**Then, head over to https://github.com/zirconium-dev/zirconium in order to use actual Zirconium please.
+**Then, head over to https://github.com/zirconium-dev/zirconium in order to use actual Zirconium please.**
 
 Once you have some flavour of Fedora Atomic installed, run `sudo bootc switch ghcr.io/zirconium-dev/zirconium` 
 
 ~~If you're having issues, ask for help in our [Discord](https://discord.gg/mmgNQpxwhW). We're working on ISOs.~~
 
 ## Can I still customize Niri/Noctalia?
-Yes! We do update our dotfiles in OS updates, however you're not forced to use them. We're hoping at some point to be able to make the dotfile update process less destructive. 
+Yes! They do update their dotfiles in OS updates, however you're not forced to use them. They're hoping at some point to be able to make the dotfile update process less destructive. 
 
 ## Zirconium is a stupid name. Why did you pick Zirconium?
 A weird wax baby made me.
