@@ -4,7 +4,7 @@ COPY build_files /build
 COPY system_files /files
 COPY cosign.pub /files/etc/pki/containers/zirconium.pub
 
-FROM quay.io/fedora/fedora-bootc:43
+FROM ghcr.io/ublue-os/bluefin-nvidia:43
 
 RUN --mount=type=bind,from=ctx,source=/,target=/ctx \
     --mount=type=tmpfs,dst=/var \
