@@ -5,7 +5,7 @@ set -xeuo pipefail
 systemctl enable systemd-timesyncd
 systemctl enable systemd-resolved.service
 
-dnf -y install dnf-plugins-core 'dnf5-command(config-manager)'
+dnf -y install 'dnf5-command(config-manager)'
 
 #dnf config-manager addrepo --from-repofile=https://pkgs.tailscale.com/stable/fedora/tailscale.repo
 #dnf config-manager setopt tailscale-stable.enabled=0
@@ -31,6 +31,8 @@ dnf -y remove console-login-helper-messages \
     chrony
 
 dnf -y install \
+	cifs-utils \
+    gvfs-smb \
     plymouth \
     plymouth-system-theme \
     fwupd \
