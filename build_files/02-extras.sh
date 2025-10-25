@@ -15,6 +15,6 @@ echo "net.ipv4.ip_forward = 1" >/usr/lib/sysctl.d/docker-ce.conf
 sed -i 's/enable docker/disable docker/' /usr/lib/systemd/system-preset/90-default.preset
 systemctl preset docker.service docker.socket
 
-cat >/usr/lib/sysusers.d/docker.conf <<'EOF'
-g docker -
-EOF
+#cat >/usr/lib/sysusers.d/docker.conf <<'EOF'
+#g docker -
+#EOF
